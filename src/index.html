@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="relative flex items-center justify-between bg-orange-700">
+        <div class="logo">
+          <a href=""
+            ><h1 class="text-purple-400 text-5xl font-bold font-mono">
+              CleanAwaY
+            </h1></a
+          >
+        </div>
+        <div class="menu">
+          <ul class="relative flex items-center gap-5">
+            <li class="py-8 px-2 hover:bg-gray-500 hover:transition text-white">
+              <a href="" class="text-xl pe-5">Home</a>
+            </li>
+            <li class="py-8 px-2 hover:bg-gray-500 hover:transition text-white">
+              <a href="" class="text-xl pe-5">Service</a>
+            </li>
+            <li class="py-8 px-2 hover:bg-gray-500 hover:transition text-white">
+              <a href="" class="text-xl pe-5">Industry</a>
+            </li>
+            <li class="py-8 px-2 hover:bg-gray-500 hover:transition text-white">
+              <a href="" class="text-xl pe-5">About Us</a>
+            </li>
+            <li
+              class="py-8 px-2 hover:bg-gray-500 hover:transition text-white"
+              data-modal-target="contact-box"
+              data-modal-toggle="contact-box"
+            >
+              <a href="" class="text-xl pe-5">Contact Us</a>
+            </li>
+            <li class="py-8 px-2 hover:bg-gray-500 hover:transition text-white">
+              <button class="bg-slate-5 text-xl pe-20">SEARCH</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="contact-box" class="z-50 hidden absolute top-20 right-60 w-1/2 h-72 bg-orange-700">
+        <div class="contact p-5 w-full">
+          <div class="w-full "><button class="" data-modal-hide="contact-box">X</button></div>
+          <div class="row flex">
+            <div class="left w-1/2 px-4 border-r-gray-950">
+              <div class="w-full">
+                <h1 class="text-xl mb-5">Contact Us</h1>
+                <div class="p-2">13339</div>
+                <div class="p-2">General Customer</div>
+                <div class="p-2">130000667787</div>
+                <div class="p-2">Claeanaway daneils customer</div>
+              </div>
+            </div>
+            <div class="right w-1/2 px-4">
+              <div class="w-full">
+                <h1 class="mb-5">Make an enquiry:</h1>
+                <div class="p-2" ><a href="" data-modal-target="mymodal" data-modal-toggle="mymodal">Request a quote form</a></div>
+                <div class="p-2">General Customer</div>
+                <div class="p-2">Slips order</div>
+                <div class="p-2">Book/ change a service form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mymodal" class="hidden z-50 max-w-2xl w-full absolute top-28 left-1/4">
+        <form action="" class="border border-blue-600 rounded">
+          <div class="modal-header bg-blue-500 w-full p-5">
+            <div class="w-full relative pb-10">
+              <button class="text-white absolute right-0" data-modal-hide="mymodal">X</button>
+            </div>
+            <h1 class="text-4xl text-white text-center">Request a Quote</h1>
+          </div>
+
+          <div class="modal-body w-full p-5 gap-8">
+            <div class="grid grid-cols-2 gap-6 w-full">
+              <div class="flex flex-col">
+                <div class="mb-5 flex flex-col">
+                  <label for="">Your First Name</label>
+                  <input
+                    class="placeholder:text-gray-500 border border-gray-700"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="mb-5 flex flex-col">
+                  <label for="">Contact Number</label>
+                  <input
+                    class="placeholder:text-gray-700"
+                    type="tel"
+                    name=""
+                    id=""
+                    placeholder="Your Phone"
+                  />
+                </div>
+                <div class="mb-5 flex flex-col">
+                  <label for="">State</label>
+                  <select name="" id="" class="" class="border border-gray-700">
+                    <option value="" selected>Select Your State</option>
+                    <option value="">UK</option>
+                    <option value="">Mexico</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="mb-5 flex flex-col">
+                  <label for="">Last Name</label>
+                  <input
+                    class="placeholder:text-gray-700"
+                    type="tel"
+                    name=""
+                    id=""
+                    placeholder="Your Last Name"
+                  />
+                </div>
+                <div class="mb-5 flex flex-col">
+                  <label for="">Email</label>
+                  <input
+                    class="placeholder:text-gray-700"
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="mb-5 flex flex-col">
+                  <label for="">Postcode</label>
+                  <input
+                    class="placeholder:text-gray-700"
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Your Postcode"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <span>I am a </span>
+              <div class="grid grid-cols-2 mt-2">
+                <div>
+                  <input type="radio" name="customer" id="" checked /><span
+                    class="ms-5"
+                    >News customer</span
+                  >
+                </div>
+                <div>
+                  <input type="radio" name="customer" id="" /><span class="ms-5"
+                    >Old customer</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <span>I need a solution for my</span>
+              <div class="grid grid-cols-2 mt-2">
+                <div>
+                  <input type="radio" name="solution" id="" checked /><span
+                    class="ms-5"
+                    >Home</span
+                  >
+                </div>
+                <div>
+                  <input type="radio" name="solution" id="" /><span class="ms-5"
+                    >Business</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="mb-2">My Industry is</p>
+              <select name="" id="" class="w-full">
+                <option value="" selected>Please Select</option>
+                <option value="">CleanAwaY</option>
+              </select>
+              <p class="text-blue-600 my-2">
+                Looking for a skip? Browses our skip including sizes and prices
+                here.
+              </p>
+            </div>
+            <div class="mb-5">
+              <p>
+                The services that I am interested in are
+                <span class="text-red-600 font-bold">*</span>
+              </p>
+              <div class="grid grid-cols-2 mt-2">
+                <div class="w-full">
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Skip bing and steel Cag</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Health Service</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Septic Waste</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Product Destribution</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Liduid Waste</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Industrial servie and cleaning</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Equipment Services</span>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Skip bing and steel Cag</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Health Service</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Septic Waste</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Product Destribution</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Liduid Waste</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Industrial servie and cleaning</span>
+                  </div>
+                  <div class="pt-4">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="bordrer border-blue-400"
+                    /><span class="ms-2">Equipment Services</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="mb-2">How did you hear about us?</p>
+              <select name="" id="" class="w-full">
+                <option value="" selected>Referral</option>
+                <option value="">Facebook</option>
+                <option value="">Link_in</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <p class="mb-2">Anything else we need to know.</p>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="w-full"
+              ></textarea>
+              <small>0 of 15000 max characters</small>
+              <div class="w-full my-2">
+                <input type="checkbox" name="" id="" />
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nostrum corrupti at itaque
+                </span>
+              </div>
+            </div>
+            <div class="mb-5 mx-auto justify-center flex">
+              <div
+                class="box border border-gray-700 py-10 px-32 mt-2 bg-gray-200"
+              >
+                <input type="checkbox" name="" id="" /><span class="ms-2"
+                  >I am not a robot!</span
+                >
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="w-full">
+                Lorem ipsum dolor sit amet consectetur
+                <span class="text-blue-500">adipisicing</span> elit. Optio
+                repudiandae laboriosam ipsam corrupti, cumque asperiores quod
+                <span class="text-blue-600">incidunt</span> dicta ad omnis
+                quaerat qui fuga reiciendis consequuntur labore! Ipsum
+                perferendis fugiat nisi.
+              </p>
+            </div>
+            <div class="my-8 flex justify-center">
+              <button
+                class="border border-gray-700 py-3 px-14 bg-green-500 text-white"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
